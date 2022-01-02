@@ -1,0 +1,1573 @@
+
+*** Running vivado
+    with args -log xsdr_design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xsdr_design_1_wrapper.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsdr_design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 267.598 ; gain = 5.109
+Command: synth_design -top xsdr_design_1_wrapper -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3132 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 384.242 ; gain = 105.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_wrapper' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/hdl/xsdr_design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_CyFX3_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_CyFX3_0_0/synth/xsdr_design_1_CyFX3_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'CyFX3' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/CyFX3.v:3]
+	Parameter idle bound to: 8'b00000000 
+	Parameter wait_flagd bound to: 8'b00000001 
+	Parameter read bound to: 8'b00000010 
+	Parameter wait_flagb bound to: 8'b00000011 
+	Parameter write bound to: 8'b00000100 
+INFO: [Synth 8-6155] done synthesizing module 'CyFX3' (1#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/CyFX3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_CyFX3_0_0' (2#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_CyFX3_0_0/synth/xsdr_design_1_CyFX3_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_ad9226_ibuf_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_ad9226_ibuf_0_0/synth/xsdr_design_1_ad9226_ibuf_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ad9226_ibuf' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/ad9226_ibuf.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ad9226_ibuf' (3#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/ad9226_ibuf.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_ad9226_ibuf_0_0' (4#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_ad9226_ibuf_0_0/synth/xsdr_design_1_ad9226_ibuf_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_cic_compiler_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_cic_compiler_0_0/synth/xsdr_design_1_cic_compiler_0_0.vhd:71]
+	Parameter C_COMPONENT_NAME bound to: xsdr_design_1_cic_compiler_0_0 - type: string 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_NUM_STAGES bound to: 5 - type: integer 
+	Parameter C_DIFF_DELAY bound to: 2 - type: integer 
+	Parameter C_RATE bound to: 16 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 24 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 28 - type: integer 
+	Parameter C_USE_DSP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 0 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_RATE_TYPE bound to: 0 - type: integer 
+	Parameter C_MIN_RATE bound to: 16 - type: integer 
+	Parameter C_MAX_RATE bound to: 16 - type: integer 
+	Parameter C_SAMPLE_FREQ bound to: 1 - type: integer 
+	Parameter C_CLK_FREQ bound to: 1 - type: integer 
+	Parameter C_USE_STREAMING_INTERFACE bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_C1 bound to: 34 - type: integer 
+	Parameter C_C2 bound to: 33 - type: integer 
+	Parameter C_C3 bound to: 32 - type: integer 
+	Parameter C_C4 bound to: 31 - type: integer 
+	Parameter C_C5 bound to: 31 - type: integer 
+	Parameter C_C6 bound to: 0 - type: integer 
+	Parameter C_I1 bound to: 49 - type: integer 
+	Parameter C_I2 bound to: 47 - type: integer 
+	Parameter C_I3 bound to: 43 - type: integer 
+	Parameter C_I4 bound to: 39 - type: integer 
+	Parameter C_I5 bound to: 36 - type: integer 
+	Parameter C_I6 bound to: 0 - type: integer 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_DOUT_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'cic_compiler_v4_0_13' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/6863/hdl/cic_compiler_v4_0_vh_rfs.vhd:16129' bound to instance 'U0' of component 'cic_compiler_v4_0_13' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_cic_compiler_0_0/synth/xsdr_design_1_cic_compiler_0_0.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_cic_compiler_0_0' (15#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_cic_compiler_0_0/synth/xsdr_design_1_cic_compiler_0_0.vhd:71]
+WARNING: [Synth 8-350] instance 'cic_compiler_0' of module 'xsdr_design_1_cic_compiler_0_0' requires 7 connections, but only 6 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:161]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_cic_compiler_1_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_cic_compiler_1_0/synth/xsdr_design_1_cic_compiler_1_0.vhd:71]
+	Parameter C_COMPONENT_NAME bound to: xsdr_design_1_cic_compiler_1_0 - type: string 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_NUM_STAGES bound to: 5 - type: integer 
+	Parameter C_DIFF_DELAY bound to: 2 - type: integer 
+	Parameter C_RATE bound to: 16 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 24 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 28 - type: integer 
+	Parameter C_USE_DSP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 0 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_RATE_TYPE bound to: 0 - type: integer 
+	Parameter C_MIN_RATE bound to: 16 - type: integer 
+	Parameter C_MAX_RATE bound to: 16 - type: integer 
+	Parameter C_SAMPLE_FREQ bound to: 1 - type: integer 
+	Parameter C_CLK_FREQ bound to: 1 - type: integer 
+	Parameter C_USE_STREAMING_INTERFACE bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_C1 bound to: 34 - type: integer 
+	Parameter C_C2 bound to: 33 - type: integer 
+	Parameter C_C3 bound to: 32 - type: integer 
+	Parameter C_C4 bound to: 31 - type: integer 
+	Parameter C_C5 bound to: 31 - type: integer 
+	Parameter C_C6 bound to: 0 - type: integer 
+	Parameter C_I1 bound to: 49 - type: integer 
+	Parameter C_I2 bound to: 47 - type: integer 
+	Parameter C_I3 bound to: 43 - type: integer 
+	Parameter C_I4 bound to: 39 - type: integer 
+	Parameter C_I5 bound to: 36 - type: integer 
+	Parameter C_I6 bound to: 0 - type: integer 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_DOUT_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'cic_compiler_v4_0_13' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/6863/hdl/cic_compiler_v4_0_vh_rfs.vhd:16129' bound to instance 'U0' of component 'cic_compiler_v4_0_13' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_cic_compiler_1_0/synth/xsdr_design_1_cic_compiler_1_0.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_cic_compiler_1_0' (16#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_cic_compiler_1_0/synth/xsdr_design_1_cic_compiler_1_0.vhd:71]
+WARNING: [Synth 8-350] instance 'cic_compiler_1' of module 'xsdr_design_1_cic_compiler_1_0' requires 7 connections, but only 6 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:168]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_clk_wiz_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_clk_wiz_0_0_clk_wiz' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 64.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 90.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (18#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_clk_wiz_0_0_clk_wiz' (19#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_clk_wiz_0_0' (20#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_clk_wiz_1_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_clk_wiz_1_0_clk_wiz' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV__parameterized0' (20#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_clk_wiz_1_0_clk_wiz' (21#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_clk_wiz_1_0' (22#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0.v:70]
+WARNING: [Synth 8-350] instance 'clk_wiz_1' of module 'xsdr_design_1_clk_wiz_1_0' requires 4 connections, but only 3 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:181]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_dds_axis_data_to_sin_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_axis_data_to_sin_0_0/synth/xsdr_design_1_dds_axis_data_to_sin_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'dds_axis_data_to_sin_cos' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/dds_axis_data_to_sin_cos.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dds_axis_data_to_sin_cos' (23#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/dds_axis_data_to_sin_cos.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_dds_axis_data_to_sin_0_0' (24#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_axis_data_to_sin_0_0/synth/xsdr_design_1_dds_axis_data_to_sin_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_dds_compiler_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-5640] Port 'debug_axi_pinc_in' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_poff_in' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_resync_in' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_axi_chan_in' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_core_nd' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:73]
+WARNING: [Synth 8-5640] Port 'debug_phase_nd' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:73]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_MODE_OF_OPERATION bound to: 0 - type: integer 
+	Parameter C_MODULUS bound to: 9 - type: integer 
+	Parameter C_ACCUMULATOR_WIDTH bound to: 24 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_HAS_PHASE_OUT bound to: 0 - type: integer 
+	Parameter C_HAS_PHASEGEN bound to: 1 - type: integer 
+	Parameter C_HAS_SINCOS bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_NEGATIVE_COSINE bound to: 0 - type: integer 
+	Parameter C_NEGATIVE_SINE bound to: 0 - type: integer 
+	Parameter C_NOISE_SHAPING bound to: 1 - type: integer 
+	Parameter C_OUTPUTS_REQUIRED bound to: 2 - type: integer 
+	Parameter C_OUTPUT_FORM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 12 - type: integer 
+	Parameter C_PHASE_ANGLE_WIDTH bound to: 10 - type: integer 
+	Parameter C_PHASE_INCREMENT bound to: 1 - type: integer 
+	Parameter C_PHASE_INCREMENT_VALUE bound to: 000111000110011001100111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_RESYNC bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET bound to: 0 - type: integer 
+	Parameter C_PHASE_OFFSET_VALUE bound to: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 - type: string 
+	Parameter C_OPTIMISE_GOAL bound to: 0 - type: integer 
+	Parameter C_USE_DSP48 bound to: 0 - type: integer 
+	Parameter C_POR_MODE bound to: 0 - type: integer 
+	Parameter C_AMPLITUDE bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_S_PHASE bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_CONFIG bound to: 1 - type: integer 
+	Parameter C_S_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_S_CONFIG_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_HAS_M_DATA bound to: 1 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_M_PHASE bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_PHASE_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_CHAN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dds_compiler_v6_0_17' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/018d/hdl/dds_compiler_v6_0_vh_rfs.vhd:47292' bound to instance 'U0' of component 'dds_compiler_v6_0_17' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:185]
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_dds_compiler_0_0' (34#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_dds_compiler_0_0/synth/xsdr_design_1_dds_compiler_0_0.vhd:70]
+WARNING: [Synth 8-350] instance 'dds_compiler_0' of module 'xsdr_design_1_dds_compiler_0_0' requires 6 connections, but only 5 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:189]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_delay_32b_0_1' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_delay_32b_0_1/synth/xsdr_design_1_delay_32b_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'delay_32b' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/delay_32b.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'delay_32b' (35#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/delay_32b.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_delay_32b_0_1' (36#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_delay_32b_0_1/synth/xsdr_design_1_delay_32b_0_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_fifo_generator_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_0_0/synth/xsdr_design_1_fifo_generator_0_0.vhd:73]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 14 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 32 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 8kx4 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 8192 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 8193 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 16381 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 16380 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 14 - type: integer 
+	Parameter C_RD_DEPTH bound to: 16384 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 14 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 14 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16384 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 14 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/64f4/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_0_0/synth/xsdr_design_1_fifo_generator_0_0.vhd:543]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (50#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_fifo_generator_0_0' (65#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_0_0/synth/xsdr_design_1_fifo_generator_0_0.vhd:73]
+WARNING: [Synth 8-350] instance 'fifo_generator_0' of module 'xsdr_design_1_fifo_generator_0_0' requires 9 connections, but only 8 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:200]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_fifo_generator_1_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_1_0/synth/xsdr_design_1_fifo_generator_1_0.vhd:72]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 32 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 61 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 60 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter C_RD_DEPTH bound to: 64 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter C_WR_DEPTH bound to: 64 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/64f4/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_1_0/synth/xsdr_design_1_fifo_generator_1_0.vhd:542]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (65#1) [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_fifo_generator_1_0' (66#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_1_0/synth/xsdr_design_1_fifo_generator_1_0.vhd:72]
+WARNING: [Synth 8-350] instance 'fifo_generator_1' of module 'xsdr_design_1_fifo_generator_1_0' requires 8 connections, but only 7 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:209]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_fir_compiler_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_0_0/synth/xsdr_design_1_fir_compiler_0_0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: xsdr_design_1_fir_compiler_0_0 - type: string 
+	Parameter C_COEF_FILE bound to: xsdr_design_1_fir_compiler_0_0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 36 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 2 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 65 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 1 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 2 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 14,14 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 28 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 28 - type: string 
+	Parameter C_DATA_WIDTH bound to: 28 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 18,18 - type: string 
+	Parameter C_COEF_WIDTH bound to: 18 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0,0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 1,0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0,0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 35,34 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 32 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 48 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: 0,1,0,14 - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 2 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 9 - type: integer 
+	Parameter C_INPUT_RATE bound to: 16 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 32 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 20 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_11' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/3697/hdl/fir_compiler_v7_2_vh_rfs.vhd:61157' bound to instance 'U0' of component 'fir_compiler_v7_2_11' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_0_0/synth/xsdr_design_1_fir_compiler_0_0.vhd:209]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_fir_compiler_0_0' (83#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_0_0/synth/xsdr_design_1_fir_compiler_0_0.vhd:71]
+WARNING: [Synth 8-350] instance 'fir_compiler_0' of module 'xsdr_design_1_fir_compiler_0_0' requires 7 connections, but only 6 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:217]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_fir_compiler_1_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_1_0/synth/xsdr_design_1_fir_compiler_1_0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: xsdr_design_1_fir_compiler_1_0 - type: string 
+	Parameter C_COEF_FILE bound to: xsdr_design_1_fir_compiler_1_0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 36 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 2 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 65 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 1 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 2 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 14,14 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 28 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 28 - type: string 
+	Parameter C_DATA_WIDTH bound to: 28 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 18,18 - type: string 
+	Parameter C_COEF_WIDTH bound to: 18 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0,0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0,1 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 1,0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0,0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 35,34 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 32 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 48 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: 0,1,0,14 - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 2 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 9 - type: integer 
+	Parameter C_INPUT_RATE bound to: 16 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 32 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 20 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_11' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/3697/hdl/fir_compiler_v7_2_vh_rfs.vhd:61157' bound to instance 'U0' of component 'fir_compiler_v7_2_11' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_1_0/synth/xsdr_design_1_fir_compiler_1_0.vhd:209]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_fir_compiler_1_0' (84#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_1_0/synth/xsdr_design_1_fir_compiler_1_0.vhd:71]
+WARNING: [Synth 8-350] instance 'fir_compiler_1' of module 'xsdr_design_1_fir_compiler_1_0' requires 7 connections, but only 6 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:224]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_iq32_to_fifo32_0_1' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_iq32_to_fifo32_0_1/synth/xsdr_design_1_iq32_to_fifo32_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'iq32_to_fifo32' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/iq32_to_fifo32.v:3]
+	Parameter wait_iq_data bound to: 4'b0000 
+	Parameter write_i_data bound to: 4'b0001 
+	Parameter write_q_data bound to: 4'b0010 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/iq32_to_fifo32.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'iq32_to_fifo32' (85#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/iq32_to_fifo32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_iq32_to_fifo32_0_1' (86#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_iq32_to_fifo32_0_1/synth/xsdr_design_1_iq32_to_fifo32_0_1.v:58]
+WARNING: [Synth 8-350] instance 'iq32_to_fifo32_0' of module 'xsdr_design_1_iq32_to_fifo32_0_1' requires 12 connections, but only 11 given [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:231]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_mult_gen_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_0_0/synth/xsdr_design_1_mult_gen_0_0.vhd:69]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_0_0/synth/xsdr_design_1_mult_gen_0_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_0_0/synth/xsdr_design_1_mult_gen_0_0.vhd:72]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_A_WIDTH bound to: 12 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 12 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 23 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 0 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/6bb5/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_0_0/synth/xsdr_design_1_mult_gen_0_0.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_mult_gen_0_0' (91#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_0_0/synth/xsdr_design_1_mult_gen_0_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'xsdr_design_1_mult_gen_1_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_1_0/synth/xsdr_design_1_mult_gen_1_0.vhd:69]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_1_0/synth/xsdr_design_1_mult_gen_1_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_1_0/synth/xsdr_design_1_mult_gen_1_0.vhd:72]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_A_WIDTH bound to: 12 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 12 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 23 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 0 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_14' declared at 'c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ipshared/6bb5/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_14' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_1_0/synth/xsdr_design_1_mult_gen_1_0.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'xsdr_design_1_mult_gen_1_0' (92#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_mult_gen_1_0/synth/xsdr_design_1_mult_gen_1_0.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_design_1_xsdr_ctrl_0_0' [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_xsdr_ctrl_0_0/synth/xsdr_design_1_xsdr_ctrl_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xsdr_ctrl' [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/xsdr_ctrl.v:3]
+	Parameter idle bound to: 8'b00000000 
+	Parameter read_ctrl_fifo bound to: 8'b00000001 
+	Parameter parse_ctrl_cmd bound to: 8'b00000010 
+	Parameter set_phi_inc bound to: 8'b00000011 
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_ctrl' (93#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/new/xsdr_ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_xsdr_ctrl_0_0' (94#1) [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_xsdr_ctrl_0_0/synth/xsdr_design_1_xsdr_ctrl_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1' (95#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/synth/xsdr_design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xsdr_design_1_wrapper' (96#1) [C:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/hdl/xsdr_design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xsdr_ctrl has unconnected port reset_n
+WARNING: [Synth 8-3331] design mult_gen_v12_0_14_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized10 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized10 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design buff__parameterized0 has unconnected port RE
+WARNING: [Synth 8-3331] design buff__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized19 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized19 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized19 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized19 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized19 has unconnected port CLK
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized13 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized13 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized12 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay has unconnected port CLK
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized11 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized9 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized9 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design dpr_mem has unconnected port CE_B
+WARNING: [Synth 8-3331] design dpr_mem has unconnected port SCLR_A
+WARNING: [Synth 8-3331] design dpr_mem has unconnected port SCLR_B
+WARNING: [Synth 8-3331] design wrap_buff has unconnected port BUFF_CLR
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design cntrl_delay__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design buff has unconnected port RE
+WARNING: [Synth 8-3331] design buff has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized14 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized14 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized14 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized14 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized14 has unconnected port CLK
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized22 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized22 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized22 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized22 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized22 has unconnected port CLK
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized18 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized18 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized18 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized18 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized18 has unconnected port CLK
+WARNING: [Synth 8-3331] design calc__parameterized2 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design calc__parameterized2 has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design calc__parameterized2 has unconnected port CED
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized21 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized21 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized21 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized21 has unconnected port CLK
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized24 has unconnected port WE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized24 has unconnected port CE
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized24 has unconnected port SCLR
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized24 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design fir_compiler_v7_2_11_delay__parameterized24 has unconnected port CLK
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port POUT[casc][52]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port POUT[casc][51]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port POUT[casc][50]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port POUT[casc][49]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port POUT[casc][48]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][47]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][46]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][45]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][44]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][43]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][42]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][41]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][40]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][39]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][38]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][37]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][36]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][35]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][34]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][33]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][32]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][31]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][30]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][29]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][28]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][27]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][26]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][25]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][24]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][23]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][22]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][21]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][20]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][19]
+WARNING: [Synth 8-3331] design add_accum__parameterized0 has unconnected port PIN[fab][18]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:28 ; elapsed = 00:02:30 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:28 ; elapsed = 00:02:30 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2052 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0_board.xdc] for cell 'xsdr_design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0_board.xdc] for cell 'xsdr_design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0.xdc] for cell 'xsdr_design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0.xdc] for cell 'xsdr_design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'xsdr_design_1_i/fir_compiler_0/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'xsdr_design_1_i/fir_compiler_0/U0'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_1_0/constraints/fir_compiler_v7_2.xdc] for cell 'xsdr_design_1_i/fir_compiler_1/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fir_compiler_1_0/constraints/fir_compiler_v7_2.xdc] for cell 'xsdr_design_1_i/fir_compiler_1/U0'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_0_0/xsdr_design_1_fifo_generator_0_0.xdc] for cell 'xsdr_design_1_i/fifo_generator_0/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_0_0/xsdr_design_1_fifo_generator_0_0.xdc] for cell 'xsdr_design_1_i/fifo_generator_0/U0'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0_board.xdc] for cell 'xsdr_design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0_board.xdc] for cell 'xsdr_design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0.xdc] for cell 'xsdr_design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0.xdc] for cell 'xsdr_design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_1_0/xsdr_design_1_fifo_generator_1_0.xdc] for cell 'xsdr_design_1_i/fifo_generator_1/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_1_0/xsdr_design_1_fifo_generator_1_0.xdc] for cell 'xsdr_design_1_i/fifo_generator_1/U0'
+Parsing XDC File [C:/Xilinx/Projects/xSDR/xSDR.srcs/constrs_1/new/xsdr_constr_1.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Xilinx/Projects/xSDR/xSDR.srcs/constrs_1/new/xsdr_constr_1.xdc:3]
+Finished Parsing XDC File [C:/Xilinx/Projects/xSDR/xSDR.srcs/constrs_1/new/xsdr_constr_1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Projects/xSDR/xSDR.srcs/constrs_1/new/xsdr_constr_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xsdr_design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xsdr_design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xsdr_design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xsdr_design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 927.559 ; gain = 0.000
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0_late.xdc] for cell 'xsdr_design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_0_0/xsdr_design_1_clk_wiz_0_0_late.xdc] for cell 'xsdr_design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_0_0/xsdr_design_1_fifo_generator_0_0_clocks.xdc] for cell 'xsdr_design_1_i/fifo_generator_0/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_0_0/xsdr_design_1_fifo_generator_0_0_clocks.xdc] for cell 'xsdr_design_1_i/fifo_generator_0/U0'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0_late.xdc] for cell 'xsdr_design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_clk_wiz_1_0/xsdr_design_1_clk_wiz_1_0_late.xdc] for cell 'xsdr_design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_1_0/xsdr_design_1_fifo_generator_1_0_clocks.xdc] for cell 'xsdr_design_1_i/fifo_generator_1/U0'
+Finished Parsing XDC File [c:/Xilinx/Projects/xSDR/xSDR.srcs/sources_1/bd/xsdr_design_1/ip/xsdr_design_1_fifo_generator_1_0/xsdr_design_1_fifo_generator_1_0_clocks.xdc] for cell 'xsdr_design_1_i/fifo_generator_1/U0'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'xsdr_design_1_i/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xsdr_design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xsdr_design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 927.559 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 927.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1160 instances were transformed.
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 508 instances
+  MULT_AND => LUT2: 156 instances
+  MUXCY_L => MUXCY: 496 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 927.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.079 . Memory (MB): peak = 927.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/clk_wiz_0/inst. (constraint file  C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc, line 61).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fir_compiler_0/U0. (constraint file  C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc, line 72).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fir_compiler_1/U0. (constraint file  C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc, line 75).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_0/U0. (constraint file  C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc, line 78).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/clk_wiz_1/inst. (constraint file  C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc, line 84).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_1/U0. (constraint file  C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/dont_touch.xdc, line 95).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/ad9226_ibuf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/dds_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/dds_axis_data_to_sin_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/mult_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/mult_gen_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/cic_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/cic_compiler_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fir_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fir_compiler_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/iq32_to_fifo32_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/CyFX3_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/delay_32b_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/xsdr_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_0/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xsdr_design_1_i/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_fx3_state_reg' in module 'CyFX3'
+INFO: [Synth 8-5546] ROM "r_fx3_sloe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_fx3_sloe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_fx3_slrd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_fx3_slwr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_fx3_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_rd_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_u_fifo_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_p_fifo_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_fx3_slcs0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_wr_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_fx3_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "r_fx3_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_fx3_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_fx3_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rate_cnt_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "op_rate_max" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comb_px_cnt_max" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sin_cos_lut" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5545] ROM "add" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'iq32_to_fifo32'
+INFO: [Synth 8-5544] ROM "r_iq_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_ctrl_fifo_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_phi_inc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_phi_inc_en0" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                         00000000
+              wait_flagd |                              001 |                         00000001
+                    read |                              010 |                         00000010
+              wait_flagb |                              011 |                         00000011
+                   write |                              100 |                         00000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_fx3_state_reg' using encoding 'sequential' in module 'CyFX3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            wait_iq_data |                              001 |                             0000
+            write_i_data |                              010 |                             0001
+            write_q_data |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'one-hot' in module 'iq32_to_fifo32'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:54 ; elapsed = 00:02:57 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'decimate:/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_mem_we' (delay_bit__parameterized0) to 'decimate:/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_en_dly'
+INFO: [Synth 8-223] decloning instance 'xsdr_design_1_i/fir_compiler_0/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (fir_compiler_v7_2_11_delay__parameterized5) to 'xsdr_design_1_i/fir_compiler_0/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
+INFO: [Synth 8-223] decloning instance 'xsdr_design_1_i/fir_compiler_1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay' (fir_compiler_v7_2_11_delay__parameterized5) to 'xsdr_design_1_i/fir_compiler_1/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_fx3_sloe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_p_fifo_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_rd_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_fx3_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_u_fifo_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_fx3_sloe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_fx3_slrd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_fx3_slwr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5545] ROM "add" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "add" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5545] ROM "add" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "add" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "g_polyphase_decimation.i_polyphase_decimation/add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_ctrl_fifo_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_phi_inc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/r_phi_inc_en0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (xsdr_design_1_i/CyFX3_0/\inst/r_fx3_pktend_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/CyFX3_0/\inst/r_fx3_slcs_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (xsdr_design_1_i/CyFX3_0/\inst/r_fx3_reset_reg )
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]' (FDSE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]' (FDSE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[1]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[3]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[4]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[5]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[6]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[7]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[8]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[9]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[10]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[11]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[12]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[13]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[14]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[15]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[16]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[17]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[18]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[19]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[20]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[20]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[21]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[22]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[23]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[24]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[25]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[25]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[26]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[26]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[27]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[28]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[28]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[29]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[30]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[30]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[31]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[32]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[32]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[33]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[33]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]' (FDSE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]' (FDSE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/cic_compiler_0/U0/i_synth/\decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0] )
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]' (FDSE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/cic_compiler_0/U0/i_synth/\decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg )
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (xsdr_design_1_i/cic_compiler_0/U0/i_synth/\decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1] )
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_0/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/cic_compiler_0/U0/i_synth/\decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg )
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]' (FDSE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]' (FDSE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[0]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[1]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[2]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[3]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[4]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[5]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[6]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[7]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[8]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[9]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[10]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[11]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[12]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[13]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[14]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[15]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[16]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[17]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[18]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[19]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[20]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[20]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[21]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[22]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[23]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[24]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[25]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[25]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[26]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[26]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[27]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[28]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[28]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[29]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[30]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[30]'
+INFO: [Synth 8-3886] merging instance 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_d_dly/gen_reg.d_reg_reg[31]' (FDRE) to 'xsdr_design_1_i/cic_compiler_1/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/cic_compiler_1/U0/i_synth/\decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/cic_compiler_1/U0/i_synth/\decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (xsdr_design_1_i/cic_compiler_1/U0/i_synth/\decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/cic_compiler_1/U0/i_synth/\decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin_reg/gen_rtl.gen_reg.d_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_0/U0/i_synth/p_0_out_inferred__0/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_0/U0/i_synth/p_0_out_inferred/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.gen_data_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_0/U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_0/U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_0/U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl[1].address_reg[1][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_1/U0/i_synth/p_0_out_inferred__0/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_1/U0/i_synth/p_0_out_inferred/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.gen_data_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_1/U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_accum_cntrl.accum_opcode_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_1/U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (xsdr_design_1_i/fir_compiler_1/U0/i_synth/\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.g_cntrl[1].address_reg[1][10] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:03:05 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance xsdr_design_1_i/dds_compiler_0/U0/i_synth/i_0/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_full_table.i_block_rom.i_pipe_1.pre_asyn_sin_RAM_op_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance xsdr_design_1_i/dds_compiler_0/U0/i_synth/i_1/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_full_table.i_block_rom.i_pipe_1.pre_asyn_cos_RAM_op_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:15 ; elapsed = 00:03:19 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:17 ; elapsed = 00:03:21 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:20 ; elapsed = 00:03:25 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \inst_fifo_gen/gconvfifo.rf/grf.rf/p_18_out  is driving 58 big block pins (URAM, BRAM and DSP loads). Created 6 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:22 ; elapsed = 00:03:26 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:22 ; elapsed = 00:03:26 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:23 ; elapsed = 00:03:27 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:23 ; elapsed = 00:03:27 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     5|
+|2     |CARRY4     |    79|
+|3     |DSP48E1    |     6|
+|4     |DSP48E1_1  |     8|
+|5     |LUT1       |    90|
+|6     |LUT2       |   807|
+|7     |LUT3       |   151|
+|8     |LUT4       |   362|
+|9     |LUT5       |   527|
+|10    |LUT6       |   147|
+|11    |MMCME2_ADV |     2|
+|12    |MULT_AND   |   154|
+|13    |MUXCY      |   184|
+|14    |MUXCY_L    |   496|
+|15    |RAM16X1D   |    56|
+|16    |RAMB18E1_1 |     1|
+|17    |RAMB18E1_2 |     1|
+|18    |RAMB18E1_3 |     1|
+|19    |RAMB36E1   |     2|
+|20    |RAMB36E1_1 |    12|
+|21    |SRL16E     |   273|
+|22    |SRLC32E    |   224|
+|23    |XORCY      |   664|
+|24    |FDRE       |  2769|
+|25    |FDSE       |     8|
+|26    |IBUF       |    19|
+|27    |IOBUF      |    32|
+|28    |OBUF       |    13|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 927.559 ; gain = 648.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1116 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:03:12 . Memory (MB): peak = 927.559 ; gain = 648.645
+Synthesis Optimization Complete : Time (s): cpu = 00:03:24 ; elapsed = 00:03:28 . Memory (MB): peak = 927.559 ; gain = 648.645
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1698 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 927.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 428 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 186 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+  MULT_AND => LUT2: 154 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 56 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+286 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:30 ; elapsed = 00:03:34 . Memory (MB): peak = 927.559 ; gain = 659.961
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 927.559 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projects/xSDR/xSDR.runs/synth_1/xsdr_design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xsdr_design_1_wrapper_utilization_synth.rpt -pb xsdr_design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  2 16:51:23 2022...

@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    Sep 25 22:52:44 2021    C:/Xilinx/Projects/xSDR/xSDR.runs/impl_1/xsdr_design_1_wrapper.bit
